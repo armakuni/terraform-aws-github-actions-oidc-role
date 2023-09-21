@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## [v0.3.0](https://github.com/armakuni/terraform-aws-github-actions-oidc/compare/v0.2.0..v0.3.0) - 2023-09-21
+#### Features
+- allow more generic custom policy - ([475d6d4](https://github.com/armakuni/terraform-aws-github-actions-oidc/commit/475d6d4e4f8274c4043bbecc53165db73f021ef7)) - Ben Nagy
+
+- - -
+
 ## [v0.2.0](https://github.com/armakuni/terraform-aws-github-actions-oidc/compare/v0.1.0..v0.2.0) - 2023-09-21
 #### Continuous Integration
 - Use service account to push bump commit - ([05caa6d](https://github.com/armakuni/terraform-aws-github-actions-oidc/commit/05caa6d805b1c01ee34a80f23a9a54dde938123c)) - Tom Oram
