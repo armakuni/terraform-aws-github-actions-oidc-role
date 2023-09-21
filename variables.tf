@@ -15,15 +15,7 @@ variable "custom_policy" {
   type = object(
     {
       Version = string
-      Statement = list(
-        object(
-          {
-            Effect   = string
-            Action   = list(string)
-            Resource = list(string)
-          }
-        )
-      )
+      Statement = list(any)
     }
   )
   default = null

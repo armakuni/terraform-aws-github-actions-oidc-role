@@ -15,7 +15,12 @@ module role {
         ]
         Resource = [
           "arn:aws:s3:::*"
-        ]
+        ],
+        Condition = {
+          "StringEquals": {
+            "s3:RequestObjectTag/TagName": "TagValue"
+          }
+        }
       }
 
     ]
