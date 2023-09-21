@@ -31,3 +31,15 @@ resource "aws_iam_role_policy_attachment" "read_only_policy" {
   policy_arn = each.value
   role       = aws_iam_role.github_actions_role.name
 }
+
+resource "aws_iam_policy" "custom_policy" {
+  count = var.custom_policy != null ? 1 : 0
+  name   = "${var.github_repo}-github-actions-custom-policy"
+  policy = jsonencode(var.custom_policy)
+}
+
+resource "aws_iam_role_policy_attachment" "custom_policy_attachment" {
+  count      = var.custom_policy != null ? 1 : 0
+  policy_arn = aws_iam_policy.custom_policy[0].arn
+  role       = aws_iam_role.github_actions_role.name
+}
