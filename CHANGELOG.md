@@ -2,6 +2,15 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## [v0.4.0](https://github.com/armakuni/terraform-aws-github-actions-oidc-role/compare/v0.3.0..v0.4.0) - 2023-09-22
+#### Documentation
+- Update cog.toml for new module name - ([d2d630f](https://github.com/armakuni/terraform-aws-github-actions-oidc-role/commit/d2d630f3f2782122fb4613fbb481085e7389b99c)) - Tom Oram
+#### Features
+- Add output for role - ([b26a733](https://github.com/armakuni/terraform-aws-github-actions-oidc-role/commit/b26a7330c2cdc8792c8f185b2247aa4337d580dd)) - Tom Oram
+- Add inputs for oidc provider ARN - ([046d2e0](https://github.com/armakuni/terraform-aws-github-actions-oidc-role/commit/046d2e04452c09288af0107e750389c8d6c9fc3b)) - Tom Oram
+
+- - -
+
 ## [v0.3.0](https://github.com/armakuni/terraform-aws-github-actions-oidc/compare/v0.2.0..v0.3.0) - 2023-09-21
 #### Features
 - allow more generic custom policy - ([475d6d4](https://github.com/armakuni/terraform-aws-github-actions-oidc/commit/475d6d4e4f8274c4043bbecc53165db73f021ef7)) - Ben Nagy
