@@ -1,9 +1,16 @@
-provider aws {}
+provider "aws" {}
 
-module role {
+data "aws_iam_openid_connect_provider" "oicd_provider" {
+  url = "https://token.actions.githubusercontent.com"
+}
+
+module "role" {
   source = "../../"
-  github_repo = "example-repo"
-  github_org = "example-org"
+
+  github_repository = "example-repo"
+  github_owner      = "example-org"
+  oicd_provider_arn = data.aws_iam_openid_connect_provider.oicd_provider.arn
+
   policy_arn_list = ["arn:aws:iam::aws:policy/ReadOnlyAccess"]
   custom_policy = {
     Version = "2017-10-17"
@@ -17,12 +24,11 @@ module role {
           "arn:aws:s3:::*"
         ],
         Condition = {
-          "StringEquals": {
-            "s3:RequestObjectTag/TagName": "TagValue"
+          "StringEquals" : {
+            "s3:RequestObjectTag/TagName" : "TagValue"
           }
         }
       }
-
     ]
   }
 }
