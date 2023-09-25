@@ -5,7 +5,7 @@ on:
 
 jobs:
   check-conventional-commits:
-    uses: armakuni/github-actions/.github/workflows/check-conventional-commits.yml@v0.2.3
+    uses: armakuni/github-actions/.github/workflows/check-conventional-commits.yml@v0.8.1
 
   generate-terraform-docs:
     if: github.ref == 'refs/heads/main'
