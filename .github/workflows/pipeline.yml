@@ -6,9 +6,20 @@ jobs:
   check-conventional-commits:
     uses: armakuni/github-actions/.github/workflows/check-conventional-commits.yml@v0.2.3
 
+  generate-terraform-docs:
+    if: github.ref == 'refs/heads/main'
+    uses: armakuni/github-actions/.github/workflows/generate-terraform-docs.yml@v0.8.1
+    with:
+      output-file: README.md
+      # This artifact is referenced by the cog.toml
+      artifact-name: terraform-docs
+
   create-release:
     needs:
       - check-conventional-commits
+      - generate-terraform-docs
     if: github.ref == 'refs/heads/main'
-    uses: armakuni/github-actions/.github/workflows/tag-and-release.yml@v0.4.1
+    uses: armakuni/github-actions/.github/workflows/tag-and-release.yml@v0.8.1
     secrets: inherit
+    with:
+      download-artifacts: true
