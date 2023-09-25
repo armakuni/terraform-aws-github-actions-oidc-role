@@ -2,7 +2,10 @@ tag_prefix = "v"
 from_latest_tag = false
 ignore_merge_commits = true
 branch_whitelist = ["main"]
-pre_bump_hooks = []
+pre_bump_hooks = [
+  # In the pipeline, this will be created by a preceding job
+  "mv ../terraform-docs/README.md README.md"
+]
 post_bump_hooks = [
     "git push",
     "git push origin v{{version}}",
