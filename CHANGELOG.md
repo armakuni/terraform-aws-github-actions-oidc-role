@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## [v0.4.1](https://github.com/armakuni/terraform-aws-github-actions-oidc-role/compare/v0.4.0..v0.4.1) - 2023-09-25
+#### Bug Fixes
+- Generate terraform docs - ([b6ddb84](https://github.com/armakuni/terraform-aws-github-actions-oidc-role/commit/b6ddb84eeb585c355778340cc037895868258f3e)) - Tom Oram
+#### Continuous Integration
+- Build on pull request - ([7e01d40](https://github.com/armakuni/terraform-aws-github-actions-oidc-role/commit/7e01d40a79b0247bf74d5b4f72c868bd0eb8f0f5)) - Tom Oram
+
+- - -
+
 ## [v0.4.0](https://github.com/armakuni/terraform-aws-github-actions-oidc-role/compare/v0.3.0..v0.4.0) - 2023-09-22
 #### Documentation
 - Update cog.toml for new module name - ([d2d630f](https://github.com/armakuni/terraform-aws-github-actions-oidc-role/commit/d2d630f3f2782122fb4613fbb481085e7389b99c)) - Tom Oram
