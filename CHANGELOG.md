@@ -2,6 +2,15 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## [v0.5.0](https://github.com/armakuni/terraform-aws-github-actions-oidc-role/compare/v0.4.1..v0.5.0) - 2023-09-26
+#### Continuous Integration
+- **(deps)** bump armakuni/github-actions from 0.2.3 to 0.8.1 - ([a00dfbb](https://github.com/armakuni/terraform-aws-github-actions-oidc-role/commit/a00dfbb6c1c6764104dd751517e965334a2f4914)) - dependabot[bot]
+- Add dependabot config - ([272261c](https://github.com/armakuni/terraform-aws-github-actions-oidc-role/commit/272261c6843eea33e58fc0e361cc8fdc8db53f09)) - Tom Oram
+#### Features
+- Allow refs to be pattern matched - ([f4f830b](https://github.com/armakuni/terraform-aws-github-actions-oidc-role/commit/f4f830bf651cf4812d5b43d9a934baae6c3a9f20)) - Billie Thompson
+
+- - -
+
 ## [v0.4.1](https://github.com/armakuni/terraform-aws-github-actions-oidc-role/compare/v0.4.0..v0.4.1) - 2023-09-25
 #### Bug Fixes
 - Generate terraform docs - ([b6ddb84](https://github.com/armakuni/terraform-aws-github-actions-oidc-role/commit/b6ddb84eeb585c355778340cc037895868258f3e)) - Tom Oram
