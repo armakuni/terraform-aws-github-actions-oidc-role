@@ -15,10 +15,14 @@ jobs:
       # This artifact is referenced by the cog.toml
       artifact-name: terraform-docs
 
+  lint-pipeline:
+    uses: armakuni/github-actions/.github/workflows/lint-pipeline.yml@v0.10.4
+
   create-release:
     needs:
       - check-conventional-commits
       - generate-terraform-docs
+      - lint-pipeline
     if: github.ref == 'refs/heads/main'
     uses: armakuni/github-actions/.github/workflows/tag-and-release.yml@v0.8.1
     secrets: inherit
